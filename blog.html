@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.4/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <h1 class="font-black text-4xl text-center py-10">Questions</h1>
+    <div class="collapse bg-base-200 mx-auto">
+        <input type="radio" name="my-accordion-1" checked="checked" /> 
+        <div class="collapse-title text-xl font-medium">
+            Discuss the scope of "var", "let", and "const".
+        </div>
+        <div class="collapse-content"> 
+            <p>The scope of a variable determines where it is available for use. In JavaScript, there are three ways to declare a variable: using var, let, or const. The scope of these declarations differs in the following ways: <br><br>
+                #var: Variables declared with var are either globally scoped or function/locally scoped1. If a variable is declared with var outside a function, its scope is global, meaning it is available for use throughout the entire program. If a variable is declared with var inside a function, its scope is local to that function, meaning it can only be accessed within that function1.<br><br>
+                #let: Variables declared with let are block-scoped1. This means that the scope of a let variable is limited to the block in which it is declared, as well as any nested blocks. For example, if a variable is declared with let inside an if statement, it can only be accessed within that if statement and any nested blocks2.<br><br>
+                #const: Variables declared with const are also block-scoped1. Like let, the scope of a const variable is limited to the block in which it is declared, as well as any nested blocks. However, unlike let, variables declared with const cannot be reassigned2.<br><br>
+                In summary, variables declared with var are either globally or function scoped, while variables declared with let and const are block-scoped. This means that the scope of a let or const variable is more limited than that of a var variable.</p>
+        </div>
+      </div>
+      <div class="collapse bg-base-200">
+        <input type="radio" name="my-accordion-1" /> 
+        <div class="collapse-title text-xl font-medium">
+            Tell us the use cases of "null" and "undefined".
+        </div>
+        <div class="collapse-content"> 
+            <p>In JavaScript, null and undefined are two distinct values that both represent the absence of a
+                value or a missing value. However, they are used in different contexts and have different use 
+                cases. <br><br>
+                #undefined: means a variable has been declared but has not yet been assigned a value.
+                For example, if you declare a variable var testVar; and then log its value using 
+                console.log(testVar);, it will show undefined. The typeof operator returns 'undefined' 
+                for an uninitialized variable or for a non-existent property. <br><br>
+                #null: on the other hand, is an assignment value that represents no value or no object.
+                It can be assigned to a variable as a representation of no value. 
+                For example, you can initialize a variable with var testVar = null; and 
+                then log its value using console.log(testVar);, it will show null. 
+                The typeof operator returns 'object' for a variable assigned the value null. <br><br>
+                In summary, you can use undefined to check if a variable has been declared but not assigned a value, while you can use null to explicitly set a variable to have no value. It is generally advisable to use null when defining a variable that is meant to later hold an object, so that you can explicitly check for the value null to determine if the variable has been filled with an object reference at a later time1.</p>
+        </div>
+      </div>
+      <div class="collapse bg-base-200">
+        <input type="radio" name="my-accordion-1" /> 
+        <div class="collapse-title text-xl font-medium">
+            What do you mean by REST API?
+        </div>
+        <div class="collapse-content"> 
+            <p>A REST API (Representational State Transfer Application Programming Interface) is an architectural style for building web services.
+                It is a set of rules that developers follow when creating an API. REST APIs are designed to take advantage of existing protocols, and although most RESTful APIs use HTTP, they can also use other protocols such as FTP or SMTP.
+                RESTful APIs are based on the concept of resources, which can be accessed and manipulated using a common set of methods. These methods correspond to create, read, update, and delete (CRUD) operations. The most common methods used in RESTful APIs are GET, POST, PUT, DELETE, and PATCH.
+                One of the key advantages of REST APIs is their flexibility. Since they can be developed using virtually any programming language and support a variety of data formats, they are widely used for connecting components and applications in a microservices architecture¹. Additionally, REST APIs are stateless, meaning that each request contains all the information necessary for processing it. This makes them easy to scale and allows for greater performance and reliability.
+            </p>
+        </div>
+    </div>
+</body>
+</html>
